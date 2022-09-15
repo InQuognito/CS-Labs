@@ -1,0 +1,28 @@
+import apple_pie_ingredientss # ImportError - "apple_pie_ingredientss" could not be found.
+
+variable = 'this is my variable!'
+print(varible) # NameError - "varible" is not defined.
+
+my_list = ['0','1']
+print(my_list[2]) # IndexError - my_list has no item in index[2].
+
+my_dict = {'myAge' : 18}
+print(my_dict['myBirthday']) # KeyError - my_dict has no key of "myBirthday".
+
+import math
+x = 999999
+x = math.pow(x,x) # OverflowError - 'x' has become too large to be read.
+
+if print() # SyntaxError - "if print()" is not valid syntax.
+
+x = 1
+if x ==1:
+print() # IndentationError - "print()" is not indented properly.
+
+x = 1
+y = '1'
+print(x + y) # TypeError - Cannot add 'int' and 'str'.
+
+print('\u242y4y2') # UnicodeError - Can't decode unicode value.
+
+x = 1 / 0 # ZeroDivisionError - Cannot divide by zero.
