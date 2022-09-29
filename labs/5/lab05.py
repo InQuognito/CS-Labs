@@ -2,8 +2,18 @@ def character_value(checkChar):
 	convertedChar = ord(checkChar) - 65
 	return convertedChar
 
-def get_check_digit():
-	pass
+def get_check_digit(card):
+    checkDigit = 0
+    for inx, digit in enumerate(card[:5], 1):
+        print(ord(digit) - 65)
+        checkDigit += (inx + 1) * (ord(digit) - 65)
+    print(checkDigit % 10)
+
+    for inx, digit in enumerate(card[:5], 1):
+        print(ord(digit) - 48)
+        checkDigit += (inx + 1) * digit
+    
+    return checkDigit % 10
 
 def check_name(id):
 	for char in id[0:5]:
